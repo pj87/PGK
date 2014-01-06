@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{02696515-E667-9650-BAAE-B843D97CAFD7}") = "PGK", "Assembly-CSharp-firstpass-vs.csproj", "{CC14AC23-ED84-8AF7-CD27-7D4218979CC8}"
 EndProject
+Project("{02696515-E667-9650-BAAE-B843D97CAFD7}") = "PGK", "Assembly-CSharp-vs.csproj", "{7B420787-E036-31D8-4EF2-86BB17E425CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{CC14AC23-ED84-8AF7-CD27-7D4218979CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC14AC23-ED84-8AF7-CD27-7D4218979CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC14AC23-ED84-8AF7-CD27-7D4218979CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B420787-E036-31D8-4EF2-86BB17E425CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B420787-E036-31D8-4EF2-86BB17E425CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B420787-E036-31D8-4EF2-86BB17E425CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B420787-E036-31D8-4EF2-86BB17E425CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-		GlobalSection(MonoDevelopProperties) = preSolution
+										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
