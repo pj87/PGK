@@ -47,6 +47,7 @@
      <Compile Include="Assets\BuildMap.cs" />
      <Compile Include="Assets\BuildMaps.cs" />
      <Compile Include="Assets\BuildWall2.cs" />
+     <Compile Include="Assets\CollisionWithCube.cs" />
      <Compile Include="Assets\CreateWall.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />

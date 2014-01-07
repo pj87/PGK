@@ -45,6 +45,10 @@ public class BuildMaps : MonoBehaviour
         buildMap(new Vector3(900, 0, 700));
     }
 
+    void onCollision()
+    {
+    } 
+
     // Update is called once per frame
     void Update()
     {
