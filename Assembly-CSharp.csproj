@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BuildMap.cs" />
+     <Compile Include="Assets\BuildMaps.cs" />
      <Compile Include="Assets\BuildWall2.cs" />
      <Compile Include="Assets\CreateWall.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
