@@ -5,7 +5,7 @@ public class GetPowerup : MonoBehaviour {
 
     void OnControllerColliderHit(ControllerColliderHit hit) 
     { 
-        if (hit.collider.gameObject.name == "powerup") 
+        if (hit.collider.gameObject.name == "powerup(Clone)") 
         { 
             Debug.Log("Get powerup!!!!!"); 
         } 
