@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+using System;
 
 public class Shooting : MonoBehaviour
 {
-    public Transform bullet; 
+    public GameObject bullet; 
     public Vector3 speed; 
     public GameObject player; 
 
-    List<Transform> lista = new List<Transform>(); 
+    List<Rigidbody> lista = new List<Rigidbody>(); 
 
     // Use this for initialization 
 	void Start () { 
@@ -20,8 +21,47 @@ public class Shooting : MonoBehaviour
 	void Update () { 
         if (Input.GetKeyDown(KeyCode.LeftControl)) 
         { 
-            var tmp = Instantiate(bullet, new Vector3(player.transform.position.x, player.transform.position.y + 1.0f, player.transform.position.z), Quaternion.identity) as Transform;
-            lista.Add(tmp); 
+            //var b = Instantiate(bullet, new Vector3(player.transform.position.x, player.transform.position.y + 1.0f, player.transform.position.z), Quaternion.identity) as Rigidbody;
+
+            //var b = Instantiate(bullet, player.transform.position, Quaternion.identity) as Rigidbody;
+
+            //bullet
+
+            //var b = Instantiate(bullet.GetComponent<Rigidbody>(), player.transform.position, player.transform.rotation) as Rigidbody;
+
+            var b = (GameObject)Instantiate(bullet, player.transform.position, Quaternion.identity) as GameObject; 
+
+            b.transform.Rotate(new Vector3(90, player.transform.rotation.eulerAngles.y, 180)); 
+            b.AddComponent<Rigidbody>();
+
+            b.GetComponent<Rigidbody>().velocity = new Vector3(0.1f, 0.0f, 0.1f);
+            b.GetComponent<Rigidbody>().mass = 0; 
+
+            //b.GetComponent<Rigidbody>().velocity = new Vector3(1.0f, 0.0f, 1.0f); 
+
+            //b.transform.eulerAngles = player.transform.rotation.eulerAngles; 
+
+            //b.velocity = transform.TransformDirection(Vector3.forward * 1.0f); 
+
+            //b.velocity = new Vector3(1.0f, 0.0f, 1.0f); 
+
+            //b.AddComponent<Rigidbody>();
+
+            //Rigidbody bRigidBody = b.AddComponent<Rigidbody>();
+            //b.rigidbody.velocity = player.transform.rotation.eulerAngles.normalized * 1.0f; 
+            
+            //b.Translate()
+            /* 
+            Debug.Log("-----------------------------------------"); 
+            Debug.Log(player.transform.rotation);
+            Debug.Log(player.transform.rotation.eulerAngles);
+            Debug.Log("-----------------------------------------"); 
+            */ 
+            //b.transform.Rotate(new Vector3(player.transform.rotation.eulerAngles.x, 0, player.transform.rotation.eulerAngles.z)); 
+            //b.transform.Rotate(new Vector3(180, 0, 270)); 
+            //b.transform.Rotate(new Vector3(player.transform.rotation.eulerAngles.x, 0, player.transform.rotation.eulerAngles.z)); 
+            //b.transform.rotation = player.transform.rotation; 
+            //lista.Add(b); 
             //var tmp1 = Instantiate(bullet, new Vector3(player.transform.position), Quaternion.identity) as Transform; 
             //var tmp1 = Instantiate(bullet, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as Transform; 
         } 
