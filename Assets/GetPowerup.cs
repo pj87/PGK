@@ -7,7 +7,8 @@ public class GetPowerup : MonoBehaviour {
     { 
         if (hit.collider.gameObject.name == "powerup(Clone)") 
         { 
-            Debug.Log("Get powerup!!!!!"); 
+            Debug.Log("Get powerup!!!!!");
+            Destroy(hit.collider.gameObject); 
         } 
     } 
 
