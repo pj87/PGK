@@ -32,10 +32,25 @@ public class Shooting : MonoBehaviour
             var b = (GameObject)Instantiate(bullet, player.transform.position, Quaternion.identity) as GameObject; 
 
             b.transform.Rotate(new Vector3(90, player.transform.rotation.eulerAngles.y, 180)); 
-            b.AddComponent<Rigidbody>();
+            b.AddComponent<Rigidbody>(); 
 
-            b.GetComponent<Rigidbody>().velocity = new Vector3(0.1f, 0.0f, 0.1f);
-            b.GetComponent<Rigidbody>().mass = 0; 
+            //b.GetComponent<Rigidbody>().useGravity = false;
+
+            b.rigidbody.useGravity = false; 
+            //b.rigidbody.isKinematic = true; 
+            //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
+            b.rigidbody.AddForce(b.transform.forward * 8000); 
+
+            //Debug.DrawLine(Vector3.zero, b.transform.forward, Color.red);
+
+            //b.GetComponent<Rigidbody>().isKinematic = false; 
+            //b.GetComponent<Rigidbody>().velocity = new Vector3(1.0f, 0.0f, 1.0f); 
+            //b.GetComponent<Rigidbody>().mass = 1.0f; 
+            //b.GetComponent<Rigidbody>().AddForce(b.transform.forward * 8); 
+            //b.GetComponent<Rigidbody>().AddForce(new Vector3(1.0f, 0.0f, 0.0f)); 
+            //b.GetComponent<Rigidbody>().velocity = new Vector3(0.1f, 0.0f, 0.0f); 
+
+            //shotRapid.rigidbody.AddForce(); 
 
             //b.GetComponent<Rigidbody>().velocity = new Vector3(1.0f, 0.0f, 1.0f); 
 
