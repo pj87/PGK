@@ -36,10 +36,12 @@ public class Shooting : MonoBehaviour
 
             //b.GetComponent<Rigidbody>().useGravity = false;
 
-            b.rigidbody.useGravity = false; 
-            //b.rigidbody.isKinematic = true; 
+            b.rigidbody.useGravity = false;
+            b.rigidbody.mass = 0.1f; 
+            //b.rigidbody.isKinematic = true;
             //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
-            b.rigidbody.AddForce(b.transform.forward * 8000); 
+            //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
+            b.rigidbody.AddForce(player.transform.forward * 8000);
 
             //Debug.DrawLine(Vector3.zero, b.transform.forward, Color.red);
 
