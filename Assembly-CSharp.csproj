@@ -51,6 +51,7 @@
      <Compile Include="Assets\CreateWall.cs" />
      <Compile Include="Assets\GUIScript.cs" />
      <Compile Include="Assets\GetPowerup.cs" />
+     <Compile Include="Assets\LabelIn3D.cs" />
      <Compile Include="Assets\MakePowerups.cs" />
      <Compile Include="Assets\Shooting.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
