@@ -36,8 +36,8 @@ public class Shooting : MonoBehaviour
 
             //b.GetComponent<Rigidbody>().useGravity = false;
 
-            b.rigidbody.useGravity = false;
-            b.rigidbody.mass = 0.1f; 
+            //b.rigidbody.useGravity = false;
+            //b.rigidbody.mass = 0.1f; 
             //b.rigidbody.isKinematic = true;
             //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
             //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
