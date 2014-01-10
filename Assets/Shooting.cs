@@ -85,9 +85,9 @@ public class Shooting : MonoBehaviour
             //var tmp1 = Instantiate(bullet, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as Transform; 
         } 
         /*
-        for (b in lista) 
+        foreach (GameObject bullet in lista) 
         {
-            if (b. )
-        } */ 
+            bullet.rigidbody.collider.
+        } */  
 	} 
 } 
