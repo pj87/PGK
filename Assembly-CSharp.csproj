@@ -49,6 +49,7 @@
      <Compile Include="Assets\BuildWall2.cs" />
      <Compile Include="Assets\CollisionWithCube.cs" />
      <Compile Include="Assets\CreateWall.cs" />
+     <Compile Include="Assets\DestroyingScript.cs" />
      <Compile Include="Assets\GUIScript.cs" />
      <Compile Include="Assets\GetPowerup.cs" />
      <Compile Include="Assets\LabelIn3D.cs" />

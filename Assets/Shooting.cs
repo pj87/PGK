@@ -9,7 +9,7 @@ public class Shooting : MonoBehaviour
     public Vector3 speed; 
     public GameObject player; 
 
-    List<Rigidbody> lista = new List<Rigidbody>(); 
+    public List<GameObject> lista = new List<GameObject>(); 
 
     // Use this for initialization 
 	void Start () { 
@@ -41,8 +41,10 @@ public class Shooting : MonoBehaviour
             //b.rigidbody.isKinematic = true;
             //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
             //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
-            b.rigidbody.AddForce(player.transform.forward * 80); 
+            b.rigidbody.AddForce(player.transform.forward * 80);
 
+
+            lista.Add(b); 
             //Debug.DrawLine(Vector3.zero, b.transform.forward, Color.red); 
 
             //b.GetComponent<Rigidbody>().isKinematic = false; 
@@ -82,5 +84,10 @@ public class Shooting : MonoBehaviour
             //var tmp1 = Instantiate(bullet, new Vector3(player.transform.position), Quaternion.identity) as Transform; 
             //var tmp1 = Instantiate(bullet, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as Transform; 
         } 
+        /*
+        for (b in lista) 
+        {
+            if (b. )
+        } */ 
 	} 
 } 
