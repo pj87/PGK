@@ -41,7 +41,7 @@ public class Shooting : MonoBehaviour
             //b.rigidbody.isKinematic = true;
             //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
             //b.rigidbody.velocity = new Vector3(0.0f, 200.0f, 1.0f); 
-            b.rigidbody.AddForce(player.transform.forward * 8000);
+            b.rigidbody.AddForce(player.transform.forward * 80);
 
             //Debug.DrawLine(Vector3.zero, b.transform.forward, Color.red);
 

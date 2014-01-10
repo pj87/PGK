@@ -1,0 +1,12 @@
+D:\Programowanie\PGK\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Programowanie\PGK\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Programowanie\PGK\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll
+D:\Programowanie\PGK\Temp\bin\Debug\UnityEditor.dll
+D:\Programowanie\PGK\Temp\bin\Debug\UnityEngine.dll
+D:\Programowanie\PGK\Temp\bin\Debug\Mono.Cecil.dll
+D:\Programowanie\PGK\Temp\bin\Debug\nunit.framework.dll
+D:\Programowanie\PGK\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Programowanie\PGK\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\Programowanie\PGK\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+D:\Programowanie\PGK\obj\Debug\Assembly-CSharp.dll
+D:\Programowanie\PGK\obj\Debug\Assembly-CSharp.pdb
